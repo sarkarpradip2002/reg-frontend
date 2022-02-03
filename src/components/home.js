@@ -119,7 +119,7 @@ const delete1=(e)=>{
 
   // fetch all the datas
   const fetchdata = async () => {
-    const url = `http://localhost:5500/`
+    const url = `https://backend-reg.herokuapp.com/`
     const response = await fetch(url, {
       method: 'GET',
       headers: {
@@ -132,7 +132,7 @@ const delete1=(e)=>{
 
   // Add you data 
   const addthedata = async (name, phone, email, hobbies, secret) => {
-    const response = await fetch(`http://localhost:5500/`, {
+    const response = await fetch(`https://backend-reg.herokuapp.com/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -145,7 +145,7 @@ const delete1=(e)=>{
 
   // Update your <details></details>
   const updatedata = async (name, phone, email, hobbies, secret) => {
-    const url = `http://localhost:5500/`
+    const url = `https://backend-reg.herokuapp.com/`
     const res=await fetch(url, {
       method: 'PUT',
       headers: {
@@ -171,7 +171,7 @@ const delete1=(e)=>{
 
   // Delete your data 
   const deletedata = async (email, secret) => {
-    const url = `http://localhost:5500/`
+    const url = `https://backend-reg.herokuapp.com/`
     const res=await fetch(url, {
       method: 'DELETE',
       headers: {
